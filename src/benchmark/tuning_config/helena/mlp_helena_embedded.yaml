@@ -1,0 +1,54 @@
+program: run_benchmark.py
+project: tjepa-sweeps
+name: mlp_helena_embedded_sweep_v2
+method: bayes
+metric:
+  goal: maximize
+  name: helena_embedded_val_accuracy
+parameters:
+  model_name:
+    value: "mlp"
+  data_set:
+    value: "helena_embedded"
+  data_path:
+    value: "./datasets"
+  data_loader_nprocs:
+    value: 4
+  exp_cadence_type:
+    value: "improvement"
+  exp_train_total_epochs:
+    value: 200
+  batch_size:
+    value: 512
+  exp_weight_decay:
+    min: 0.00001
+    max: 0.001
+  exp_lr:
+    min: 0.0001
+    max: 0.1
+  start_lr:
+    value: 0
+  final_lr:
+    value: 0
+  exp_cache_cadence:
+    value: 20
+  exp_patience:
+    value: 16
+  val_size_ratio:
+    value: 0.1
+  test_size_ratio:
+    value: 0.1
+  n_hidden:
+    values: [2, 4, 8, 16]
+  hidden_dim:
+    values: [8, 16, 32, 64, 128, 256, 512]
+  encoder_type:
+    values:
+      ["linear_flatten", "linear_per_feature", "conv", "max_pool", "mean_pool"]
+  dropout:
+    min: 0.0
+    max: 0.7
+  exp_eta_min:
+    value: 0.0
+  using_embedding:
+    value: True

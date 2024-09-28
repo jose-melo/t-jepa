@@ -1,0 +1,147 @@
+{
+    "val_metrics": [
+        {
+            "california_embedded_val_loss": 0.22209776937961578,
+            "lr": 0.0006767373997718096,
+            "california_embedded_val_rmse": 0.4711333215236664,
+            "california_embedded_val_score": -0.4711333215236664
+        }
+    ],
+    "test_metrics": [
+        {
+            "california_embedded_test_loss": 0.22209776937961578,
+            "lr": 0.0006767373997718096,
+            "california_embedded_test_rmse": 0.4711333215236664,
+            "california_embedded_test_score": -0.4711333215236664
+        }
+    ],
+    "args": {
+        "test": false,
+        "mock": false,
+        "res_dir": "./",
+        "data_path": "./datasets",
+        "data_set": "california_embedded",
+        "test_size_ratio": 0.1,
+        "val_size_ratio": 0.0,
+        "random_state": 42,
+        "full_dataset_cuda": false,
+        "verbose": false,
+        "exp_n_runs": 1,
+        "exp_device": null,
+        "np_seed": 92468,
+        "torch_seed": 45660,
+        "random": true,
+        "output_file": "mlp_california_tuned/output_18.json",
+        "batch_size": 512,
+        "exp_train_total_epochs": 200,
+        "exp_patience": 16,
+        "log_tensorboard": false,
+        "exp_cadence_type": "improvement",
+        "exp_cache_cadence": 20,
+        "exp_scheduler": true,
+        "exp_weight_decay_scheduler": false,
+        "start_lr": 0.0,
+        "lr": 0.0001,
+        "final_lr": 0.0,
+        "T_max": 10,
+        "eta_min": 0.0,
+        "exp_warmup": 1e-05,
+        "weight_decay": 1e-05,
+        "final_weight_decay": 0.01,
+        "ipe_scale": 1.0,
+        "gradient_clipping": 1.0,
+        "mp_distributed": false,
+        "mp_nodes": 1,
+        "mp_gpus": 1,
+        "mp_nr": 0,
+        "pin_memory": true,
+        "using_embedding": true,
+        "model_name": "mlp",
+        "model_dtype": "float32",
+        "data_loader_nprocs": 4,
+        "load_from_checkpoint": false,
+        "load_path": null,
+        "model_amp": false,
+        "task_type": "regression",
+        "is_batchlearning": true,
+        "iteration": 0,
+        "encoder_type": "linear_flatten",
+        "n_hidden": 3,
+        "hidden_dim": 246,
+        "dropout": 0.0310396508176633,
+        "input_embed_dim": 16,
+        "input_dim": 9,
+        "out_dim": 1,
+        "summary_input": [
+            512,
+            9,
+            16
+        ],
+        "dataset_name": "california_embedded",
+        "iterations_per_epoch": 36,
+        "num_epochs": 200
+    },
+    "profiling_info": [
+        {
+            "function": "warnings.py:503(__exit__)",
+            "call_count": 6164,
+            "total_time": 0.013201665000000001,
+            "cumulative_time": 0.015264856
+        },
+        {
+            "function": "enum.py:1175(_generate_next_value_)",
+            "call_count": 27,
+            "total_time": 3.2592e-05,
+            "cumulative_time": 5.0469e-05
+        },
+        {
+            "function": "__init__.py:668(update)",
+            "call_count": 1,
+            "total_time": 6.03e-07,
+            "cumulative_time": 6.03e-07
+        },
+        {
+            "function": "_parser.py:86(opengroup)",
+            "call_count": 71,
+            "total_time": 0.000257603,
+            "cumulative_time": 0.00045788400000000004
+        },
+        {
+            "function": "_parser.py:953(fix_flags)",
+            "call_count": 38,
+            "total_time": 6.812700000000001e-05,
+            "cumulative_time": 8.008200000000001e-05
+        },
+        {
+            "function": "_parser.py:240(__next)",
+            "call_count": 18092,
+            "total_time": 0.005025972,
+            "cumulative_time": 0.005025972
+        },
+        {
+            "function": "__init__.py:164(match)",
+            "call_count": 743,
+            "total_time": 0.00048846,
+            "cumulative_time": 0.001811068
+        },
+        {
+            "function": "__init__.py:179(sub)",
+            "call_count": 129,
+            "total_time": 0.00028846700000000004,
+            "cumulative_time": 0.002273142
+        },
+        {
+            "function": "__init__.py:199(split)",
+            "call_count": 18,
+            "total_time": 6.939500000000001e-05,
+            "cumulative_time": 0.00026758900000000004
+        },
+        {
+            "function": "__init__.py:209(findall)",
+            "call_count": 1353,
+            "total_time": 0.006394926,
+            "cumulative_time": 0.032048612000000004
+        }
+    ],
+    "total_elapsed_time": 116.23587116899999
+}

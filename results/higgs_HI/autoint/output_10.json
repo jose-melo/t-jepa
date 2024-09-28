@@ -1,0 +1,165 @@
+{
+    "val_metrics": [
+        {
+            "higgs_embedded_val_loss": 0.8749508857727051,
+            "lr": 0.0,
+            "higgs_embedded_val_accuracy": 0.4140625,
+            "higgs_embedded_val_precision": 0.17144775390625,
+            "higgs_embedded_val_recall": 0.4140625,
+            "higgs_embedded_val_f1-score": 0.24248963594436646,
+            "higgs_embedded_val_support": 128.0,
+            "higgs_embedded_val_score": 0.4140625
+        }
+    ],
+    "test_metrics": [
+        {
+            "higgs_embedded_test_loss": 0.8755292296409607,
+            "lr": 0.0,
+            "higgs_embedded_test_accuracy": 0.4140625,
+            "higgs_embedded_test_precision": 0.17144775390625,
+            "higgs_embedded_test_recall": 0.4140625,
+            "higgs_embedded_test_f1-score": 0.24248963594436646,
+            "higgs_embedded_test_support": 128.0,
+            "higgs_embedded_test_score": 0.4140625
+        }
+    ],
+    "args": {
+        "test": true,
+        "mock": true,
+        "res_dir": "./",
+        "data_path": "./datasets",
+        "data_set": "higgs_embedded",
+        "test_size_ratio": 0.1,
+        "val_size_ratio": 0.1,
+        "random_state": 42,
+        "full_dataset_cuda": false,
+        "verbose": "False",
+        "exp_n_runs": 1,
+        "exp_device": "None",
+        "np_seed": 5519,
+        "torch_seed": 83949,
+        "random": true,
+        "output_file": "autoint_higgs_tuned/output_10.json",
+        "batch_size": 512,
+        "exp_train_total_epochs": 1,
+        "exp_patience": 16,
+        "log_tensorboard": false,
+        "exp_cadence_type": "improvement",
+        "exp_cache_cadence": 20,
+        "exp_scheduler": true,
+        "exp_weight_decay_scheduler": true,
+        "start_lr": 0.0,
+        "lr": 0.00065080325132651,
+        "final_lr": 0.0,
+        "T_max": 10,
+        "eta_min": 0.0,
+        "exp_warmup": 0,
+        "weight_decay": 5.395155177026821e-05,
+        "final_weight_decay": 0.0,
+        "ipe_scale": 1.0,
+        "gradient_clipping": 1.0,
+        "mp_distributed": false,
+        "mp_nodes": 1,
+        "mp_gpus": 1,
+        "mp_nr": 0,
+        "pin_memory": true,
+        "using_embedding": true,
+        "model_name": "autoint",
+        "model_dtype": "float32",
+        "data_loader_nprocs": 4,
+        "load_from_checkpoint": false,
+        "load_path": "None",
+        "model_amp": false,
+        "task_type": "binary_class",
+        "is_batchlearning": true,
+        "iteration": 0,
+        "encoder_type": "linear_per_feature",
+        "n_layers": 7,
+        "d_token": 56,
+        "n_heads": 2,
+        "attention_dropout": 0.07290552721482114,
+        "residual_dropout": 0.043141062383989105,
+        "activation": "relu",
+        "prenormalization": false,
+        "initialization": "kaiming",
+        "kv_compression": null,
+        "kv_compression_sharing": null,
+        "d_out": 32,
+        "input_embed_dim": 16,
+        "input_dim": 29,
+        "n_cont_features": 28,
+        "cardinalities": [],
+        "out_dim": 1,
+        "summary_input": [
+            512,
+            29,
+            16
+        ],
+        "dataset_name": "higgs_embedded",
+        "iterations_per_epoch": 2,
+        "num_epochs": 1
+    },
+    "profiling_info": [
+        {
+            "function": "warnings.py:503(__exit__)",
+            "call_count": 396,
+            "total_time": 0.00042487400000000005,
+            "cumulative_time": 0.0005030880000000001
+        },
+        {
+            "function": "enum.py:1175(_generate_next_value_)",
+            "call_count": 27,
+            "total_time": 5.7443000000000006e-05,
+            "cumulative_time": 9.006900000000001e-05
+        },
+        {
+            "function": "__init__.py:668(update)",
+            "call_count": 1,
+            "total_time": 5.730000000000001e-07,
+            "cumulative_time": 5.730000000000001e-07
+        },
+        {
+            "function": "_parser.py:86(opengroup)",
+            "call_count": 71,
+            "total_time": 0.000350906,
+            "cumulative_time": 0.000628111
+        },
+        {
+            "function": "_parser.py:953(fix_flags)",
+            "call_count": 38,
+            "total_time": 8.6888e-05,
+            "cumulative_time": 0.00010214700000000001
+        },
+        {
+            "function": "_parser.py:240(__next)",
+            "call_count": 18092,
+            "total_time": 0.0061247260000000005,
+            "cumulative_time": 0.0061247260000000005
+        },
+        {
+            "function": "__init__.py:164(match)",
+            "call_count": 743,
+            "total_time": 0.000762044,
+            "cumulative_time": 0.002981131
+        },
+        {
+            "function": "__init__.py:179(sub)",
+            "call_count": 129,
+            "total_time": 0.000353275,
+            "cumulative_time": 0.002746553
+        },
+        {
+            "function": "__init__.py:199(split)",
+            "call_count": 1,
+            "total_time": 4.881e-06,
+            "cumulative_time": 9.845000000000001e-06
+        },
+        {
+            "function": "__init__.py:209(findall)",
+            "call_count": 120,
+            "total_time": 0.000499637,
+            "cumulative_time": 0.0029874570000000002
+        }
+    ],
+    "total_elapsed_time": 30.29089402100002
+}

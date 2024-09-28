@@ -1,0 +1,161 @@
+{
+    "val_metrics": [
+        {
+            "jannis_embedded_val_loss": 0.6882727146148682,
+            "lr": 4.395184078020975e-06,
+            "jannis_embedded_val_accuracy": 0.7224411964416504,
+            "jannis_embedded_val_precision": 0.7215812802314758,
+            "jannis_embedded_val_recall": 0.7224411964416504,
+            "jannis_embedded_val_f1-score": 0.720343828201294,
+            "jannis_embedded_val_support": 504.8447265625,
+            "jannis_embedded_val_score": 0.7224411964416504
+        }
+    ],
+    "test_metrics": [
+        {
+            "jannis_embedded_test_loss": 0.6882727146148682,
+            "lr": 4.395184078020975e-06,
+            "jannis_embedded_test_accuracy": 0.7224411964416504,
+            "jannis_embedded_test_precision": 0.7215812802314758,
+            "jannis_embedded_test_recall": 0.7224411964416504,
+            "jannis_embedded_test_f1-score": 0.720343828201294,
+            "jannis_embedded_test_support": 504.8447265625,
+            "jannis_embedded_test_score": 0.7224411964416504
+        }
+    ],
+    "args": {
+        "test": false,
+        "mock": false,
+        "res_dir": "./",
+        "data_path": "./datasets",
+        "data_set": "jannis_embedded",
+        "test_size_ratio": 0.1,
+        "val_size_ratio": 0.0,
+        "random_state": 42,
+        "full_dataset_cuda": false,
+        "verbose": false,
+        "exp_n_runs": 1,
+        "exp_device": null,
+        "np_seed": 34302,
+        "torch_seed": 80384,
+        "random": true,
+        "output_file": "resnet_jannis_tuned/output_5.json",
+        "batch_size": 512,
+        "exp_train_total_epochs": 200,
+        "exp_patience": 16,
+        "log_tensorboard": false,
+        "exp_cadence_type": "improvement",
+        "exp_cache_cadence": 20,
+        "exp_scheduler": true,
+        "exp_weight_decay_scheduler": true,
+        "start_lr": 0.0,
+        "lr": 4.602696747963648e-05,
+        "final_lr": 0.001,
+        "T_max": 10,
+        "eta_min": 0.0,
+        "exp_warmup": 1e-05,
+        "weight_decay": 2.9630452705751e-06,
+        "final_weight_decay": 0.0,
+        "ipe_scale": 1.0,
+        "gradient_clipping": 1.0,
+        "mp_distributed": false,
+        "mp_nodes": 1,
+        "mp_gpus": 1,
+        "mp_nr": 0,
+        "pin_memory": true,
+        "using_embedding": true,
+        "model_name": "resnet",
+        "model_dtype": "float32",
+        "data_loader_nprocs": 4,
+        "load_from_checkpoint": false,
+        "load_path": null,
+        "model_amp": false,
+        "task_type": "multi_class",
+        "is_batchlearning": true,
+        "iteration": 0,
+        "encoder_type": "linear_per_feature",
+        "d_out": 128,
+        "n_blocks": 7,
+        "d_block": 355,
+        "d_hidden": null,
+        "d_hidden_multiplier": 1.0,
+        "dropout1": 0.1367283880953254,
+        "dropout2": 0.0048498228174113645,
+        "input_embed_dim": 64,
+        "input_dim": 55,
+        "out_dim": 4,
+        "summary_input": [
+            512,
+            55,
+            64
+        ],
+        "dataset_name": "jannis_embedded",
+        "iterations_per_epoch": 148,
+        "num_epochs": 200,
+        "cardinalities": [],
+        "n_cont_features": 55
+    },
+    "profiling_info": [
+        {
+            "function": "warnings.py:503(__exit__)",
+            "call_count": 343476,
+            "total_time": 0.365084346,
+            "cumulative_time": 0.43744084200000005
+        },
+        {
+            "function": "enum.py:1175(_generate_next_value_)",
+            "call_count": 27,
+            "total_time": 5.4326e-05,
+            "cumulative_time": 8.812e-05
+        },
+        {
+            "function": "__init__.py:668(update)",
+            "call_count": 1,
+            "total_time": 6.01e-07,
+            "cumulative_time": 6.01e-07
+        },
+        {
+            "function": "_parser.py:86(opengroup)",
+            "call_count": 71,
+            "total_time": 0.00035475100000000005,
+            "cumulative_time": 0.000635667
+        },
+        {
+            "function": "_parser.py:953(fix_flags)",
+            "call_count": 38,
+            "total_time": 0.00010002000000000001,
+            "cumulative_time": 0.00011620900000000001
+        },
+        {
+            "function": "_parser.py:240(__next)",
+            "call_count": 18092,
+            "total_time": 0.005894555,
+            "cumulative_time": 0.005894555
+        },
+        {
+            "function": "__init__.py:164(match)",
+            "call_count": 743,
+            "total_time": 0.0007379200000000001,
+            "cumulative_time": 0.003013023
+        },
+        {
+            "function": "__init__.py:179(sub)",
+            "call_count": 129,
+            "total_time": 0.000357149,
+            "cumulative_time": 0.0027291280000000004
+        },
+        {
+            "function": "__init__.py:199(split)",
+            "call_count": 40,
+            "total_time": 0.000146612,
+            "cumulative_time": 0.00073344
+        },
+        {
+            "function": "__init__.py:209(findall)",
+            "call_count": 2292,
+            "total_time": 0.013197503000000001,
+            "cumulative_time": 0.06968695500000001
+        }
+    ],
+    "total_elapsed_time": 952.986643853002
+}

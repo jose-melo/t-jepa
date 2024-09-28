@@ -1,0 +1,38 @@
+{
+    "aloi_embedded_test_loss": {
+        "mean": 0.13491121605038642,
+        "std": 0.018987129965178685
+    },
+    "lr": {
+        "mean": 0.0001283982336246936,
+        "std": 0.00023182053437541063
+    },
+    "aloi_embedded_test_accuracy": {
+        "mean": 0.960861113667488,
+        "std": 0.006029913578226779
+    },
+    "aloi_embedded_test_precision": {
+        "mean": 0.9667815536260604,
+        "std": 0.005832322572507209
+    },
+    "aloi_embedded_test_recall": {
+        "mean": 0.960861113667488,
+        "std": 0.006029913578226779
+    },
+    "aloi_embedded_test_f1-score": {
+        "mean": 0.9606408089399338,
+        "std": 0.006349587087145485
+    },
+    "aloi_embedded_test_support": {
+        "mean": 509.9377746582031,
+        "std": 0.0
+    },
+    "aloi_embedded_test_score": {
+        "mean": 0.960861113667488,
+        "std": 0.006029913578226779
+    },
+    "total_elapsed_time": {
+        "mean": 894.7865020015499,
+        "std": 214.21793115088815
+    }
+}

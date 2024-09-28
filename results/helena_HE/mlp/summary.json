@@ -1,0 +1,38 @@
+{
+    "helena_embedded_test_loss": {
+        "mean": 2.4489102125167848,
+        "std": 0.009041009323192286
+    },
+    "lr": {
+        "mean": 0.00022761815062040115,
+        "std": 0.0001978107704657489
+    },
+    "helena_embedded_test_accuracy": {
+        "mean": 0.40027611404657365,
+        "std": 0.004326632250160462
+    },
+    "helena_embedded_test_precision": {
+        "mean": 0.38392882943153384,
+        "std": 0.007091905345926565
+    },
+    "helena_embedded_test_recall": {
+        "mean": 0.40027611404657365,
+        "std": 0.004326632250160462
+    },
+    "helena_embedded_test_f1-score": {
+        "mean": 0.37072592228651047,
+        "std": 0.005530004045396164
+    },
+    "helena_embedded_test_support": {
+        "mean": 504.11920166015625,
+        "std": 0.0
+    },
+    "helena_embedded_test_score": {
+        "mean": 0.40027611404657365,
+        "std": 0.004326632250160462
+    },
+    "total_elapsed_time": {
+        "mean": 405.0535580749501,
+        "std": 79.14025270769564
+    }
+}

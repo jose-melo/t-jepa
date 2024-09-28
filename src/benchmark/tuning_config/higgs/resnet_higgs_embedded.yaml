@@ -1,0 +1,68 @@
+program: run_benchmark.py
+project: tjepa-sweeps
+name: resnet_higgs_embedded_sweep_v4
+method: bayes
+metric:
+  goal: maximize
+  name: higgs_embedded_val_accuracy
+parameters:
+  model_name:
+    value: "resnet"
+  data_set:
+    value: "higgs_embedded"
+  data_path:
+    value: "./datasets"
+  data_loader_nprocs:
+    value: 4
+  exp_cadence_type:
+    value: "improvement"
+  exp_train_total_epochs:
+    value: 200
+  batch_size:
+    value: 512
+  weight_decay:
+    min: 1e-6
+    max: 1e-3
+    distribution: log_uniform_values
+  final_weight_decay:
+    value: 0.0
+  val_size_ratio:
+    value: 0.1
+  exp_cache_cadence:
+    value: 20
+  exp_patience:
+    value: 16
+  using_embedding:
+    value: True
+  eta_min:
+    value: 0.0
+  start_lr:
+    value: 0
+  test_size_ratio:
+    value: 0.1
+  encoder_type:
+    values: ["linear_flatten", "linear_per_feature"]
+  lr:
+    distribution: log_uniform_values
+    min: 1e-5
+    max: 1e-3
+  n_blocks:
+    min: 1
+    max: 8
+    distribution: int_uniform
+  d_block:
+    min: 64
+    max: 512
+    distribution: int_uniform
+  d_hidden_multiplier:
+    min: 1
+    max: 4
+    distribution: int_uniform
+  dropout1:
+    min: 0.0
+    max: 0.5
+    distribution: uniform
+  dropout2:
+    min: 0.0
+    max: 0.5
+    distribution: uniform

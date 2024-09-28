@@ -1,0 +1,38 @@
+{
+    "jannis_embedded_test_loss": {
+        "mean": 0.7063940912485123,
+        "std": 0.006879815279717068
+    },
+    "lr": {
+        "mean": 6.92061304107483e-05,
+        "std": 2.3624981722281355e-05
+    },
+    "jannis_embedded_test_accuracy": {
+        "mean": 0.7081870317459107,
+        "std": 0.004818029490522338
+    },
+    "jannis_embedded_test_precision": {
+        "mean": 0.7070306360721588,
+        "std": 0.006927132457417803
+    },
+    "jannis_embedded_test_recall": {
+        "mean": 0.7081870317459107,
+        "std": 0.004818029490522338
+    },
+    "jannis_embedded_test_f1-score": {
+        "mean": 0.7046409517526626,
+        "std": 0.005764645745723537
+    },
+    "jannis_embedded_test_support": {
+        "mean": 504.8447265625,
+        "std": 0.0
+    },
+    "jannis_embedded_test_score": {
+        "mean": 0.7081870317459107,
+        "std": 0.004818029490522338
+    },
+    "total_elapsed_time": {
+        "mean": 452.2236258546503,
+        "std": 103.39502664223114
+    }
+}

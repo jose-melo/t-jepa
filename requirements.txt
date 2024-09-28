@@ -1,0 +1,14 @@
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch
+torchvision
+pandas
+pytorch-lightning
+tabulate
+torchinfo
+scikit-learn
+matplotlib
+xgboost
+einops
+tensorboard
+rtdl_revisiting_models
+wandb

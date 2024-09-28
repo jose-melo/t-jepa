@@ -1,0 +1,5 @@
+{
+    "exp_lr": 0.001,
+    "exp_weight_decay": 2e-5,
+    "out_dim": 2
+}

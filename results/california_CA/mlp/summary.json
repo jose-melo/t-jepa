@@ -1,0 +1,22 @@
+{
+    "california_embedded_test_loss": {
+        "mean": 0.2208075277507305,
+        "std": 0.03672058325755649
+    },
+    "lr": {
+        "mean": 0.0005006268659144553,
+        "std": 0.0003091771371779519
+    },
+    "california_embedded_test_rmse": {
+        "mean": 0.4681162789463997,
+        "std": 0.03752199837073915
+    },
+    "california_embedded_test_score": {
+        "mean": -0.4681162789463997,
+        "std": 0.03752199837073915
+    },
+    "total_elapsed_time": {
+        "mean": 119.20304555245006,
+        "std": 52.46466176719087
+    }
+}

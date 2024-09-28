@@ -1,0 +1,165 @@
+{
+    "val_metrics": [
+        {
+            "adult_embedded_val_loss": 0.30203792452812195,
+            "lr": 0.0016044405056163669,
+            "adult_embedded_val_accuracy": 0.8617936372756958,
+            "adult_embedded_val_precision": 0.8568418025970459,
+            "adult_embedded_val_recall": 0.8617936372756958,
+            "adult_embedded_val_f1-score": 0.8577539920806885,
+            "adult_embedded_val_support": 498.66339111328125,
+            "adult_embedded_val_score": 0.8617936372756958
+        }
+    ],
+    "test_metrics": [
+        {
+            "adult_embedded_test_loss": 0.30027803778648376,
+            "lr": 0.0016044405056163669,
+            "adult_embedded_test_accuracy": 0.8624078631401062,
+            "adult_embedded_test_precision": 0.8586423993110657,
+            "adult_embedded_test_recall": 0.8624078631401062,
+            "adult_embedded_test_f1-score": 0.8592581152915955,
+            "adult_embedded_test_support": 498.66339111328125,
+            "adult_embedded_test_score": 0.8624078631401062
+        }
+    ],
+    "args": {
+        "test": false,
+        "mock": false,
+        "res_dir": "./",
+        "data_path": "./datasets",
+        "data_set": "adult_embedded",
+        "test_size_ratio": 0.1,
+        "val_size_ratio": 0.1,
+        "random_state": 42,
+        "full_dataset_cuda": false,
+        "verbose": false,
+        "exp_n_runs": 1,
+        "exp_device": null,
+        "np_seed": 1259,
+        "torch_seed": 43608,
+        "random": true,
+        "output_file": "autoint_adult_tuned/output_1.json",
+        "batch_size": 512,
+        "exp_train_total_epochs": 200,
+        "exp_patience": 16,
+        "log_tensorboard": false,
+        "exp_cadence_type": "improvement",
+        "exp_cache_cadence": 20,
+        "exp_scheduler": true,
+        "exp_weight_decay_scheduler": true,
+        "start_lr": 0.0,
+        "lr": 0.001717235708494997,
+        "final_lr": 0.0,
+        "T_max": 10,
+        "eta_min": 0.0,
+        "exp_warmup": 0,
+        "weight_decay": 1.782470657072e-07,
+        "final_weight_decay": 0.0,
+        "ipe_scale": 1.0,
+        "gradient_clipping": 1.0,
+        "mp_distributed": false,
+        "mp_nodes": 1,
+        "mp_gpus": 1,
+        "mp_nr": 0,
+        "pin_memory": true,
+        "using_embedding": true,
+        "model_name": "autoint",
+        "model_dtype": "float32",
+        "data_loader_nprocs": 4,
+        "load_from_checkpoint": false,
+        "load_path": null,
+        "model_amp": false,
+        "task_type": "binary_class",
+        "is_batchlearning": true,
+        "iteration": 0,
+        "encoder_type": "linear_per_feature",
+        "n_layers": 1,
+        "d_token": 200,
+        "n_heads": 2,
+        "attention_dropout": 0.0909634945240914,
+        "residual_dropout": 0.06026434091676929,
+        "activation": "relu",
+        "prenormalization": false,
+        "initialization": "kaiming",
+        "kv_compression": null,
+        "kv_compression_sharing": null,
+        "d_out": 32,
+        "input_embed_dim": 16,
+        "input_dim": 15,
+        "n_cont_features": 14,
+        "cardinalities": [],
+        "out_dim": 1,
+        "summary_input": [
+            512,
+            15,
+            16
+        ],
+        "dataset_name": "adult_embedded",
+        "iterations_per_epoch": 77,
+        "num_epochs": 200
+    },
+    "profiling_info": [
+        {
+            "function": "warnings.py:503(__exit__)",
+            "call_count": 65736,
+            "total_time": 0.070980447,
+            "cumulative_time": 0.084346693
+        },
+        {
+            "function": "enum.py:1175(_generate_next_value_)",
+            "call_count": 27,
+            "total_time": 4.0341000000000006e-05,
+            "cumulative_time": 6.355500000000001e-05
+        },
+        {
+            "function": "__init__.py:668(update)",
+            "call_count": 1,
+            "total_time": 5.110000000000001e-07,
+            "cumulative_time": 5.110000000000001e-07
+        },
+        {
+            "function": "_parser.py:86(opengroup)",
+            "call_count": 71,
+            "total_time": 0.000272852,
+            "cumulative_time": 0.000492641
+        },
+        {
+            "function": "_parser.py:953(fix_flags)",
+            "call_count": 38,
+            "total_time": 6.6804e-05,
+            "cumulative_time": 7.8454e-05
+        },
+        {
+            "function": "_parser.py:240(__next)",
+            "call_count": 18092,
+            "total_time": 0.005326254000000001,
+            "cumulative_time": 0.005326254000000001
+        },
+        {
+            "function": "__init__.py:164(match)",
+            "call_count": 743,
+            "total_time": 0.000488335,
+            "cumulative_time": 0.0018310470000000001
+        },
+        {
+            "function": "__init__.py:179(sub)",
+            "call_count": 129,
+            "total_time": 0.00024536800000000004,
+            "cumulative_time": 0.001843315
+        },
+        {
+            "function": "__init__.py:199(split)",
+            "call_count": 6,
+            "total_time": 2.1111e-05,
+            "cumulative_time": 8.6792e-05
+        },
+        {
+            "function": "__init__.py:209(findall)",
+            "call_count": 407,
+            "total_time": 0.0017295470000000001,
+            "cumulative_time": 0.008946949000000001
+        }
+    ],
+    "total_elapsed_time": 93.15843486600006
+}

@@ -1,0 +1,162 @@
+{
+    "val_metrics": [
+        {
+            "aloi_embedded_val_loss": 0.18418535590171814,
+            "lr": 5.9489386330824345e-05,
+            "aloi_embedded_val_accuracy": 0.9567592740058899,
+            "aloi_embedded_val_precision": 0.9619675278663635,
+            "aloi_embedded_val_recall": 0.9567592740058899,
+            "aloi_embedded_val_f1-score": 0.9559845328330994,
+            "aloi_embedded_val_support": 509.9377746582031,
+            "aloi_embedded_val_score": 0.9567592740058899
+        }
+    ],
+    "test_metrics": [
+        {
+            "aloi_embedded_test_loss": 0.18418535590171814,
+            "lr": 5.9489386330824345e-05,
+            "aloi_embedded_test_accuracy": 0.9567592740058899,
+            "aloi_embedded_test_precision": 0.9619675278663635,
+            "aloi_embedded_test_recall": 0.9567592740058899,
+            "aloi_embedded_test_f1-score": 0.9559845328330994,
+            "aloi_embedded_test_support": 509.9377746582031,
+            "aloi_embedded_test_score": 0.9567592740058899
+        }
+    ],
+    "args": {
+        "test": false,
+        "mock": false,
+        "res_dir": "./",
+        "data_path": "./datasets",
+        "data_set": "aloi_embedded",
+        "test_size_ratio": 0.1,
+        "val_size_ratio": 0.0,
+        "random_state": 42,
+        "full_dataset_cuda": false,
+        "verbose": false,
+        "exp_n_runs": 1,
+        "exp_device": null,
+        "np_seed": 79141,
+        "torch_seed": 38667,
+        "random": true,
+        "output_file": "dcnv2_aloi_tuned/output_8.json",
+        "batch_size": 512,
+        "exp_train_total_epochs": 200,
+        "exp_patience": 16,
+        "log_tensorboard": false,
+        "exp_cadence_type": "improvement",
+        "exp_cache_cadence": 20,
+        "exp_scheduler": true,
+        "exp_weight_decay_scheduler": true,
+        "start_lr": 0.0,
+        "lr": 8.790615382291824e-05,
+        "final_lr": 0.0,
+        "T_max": 10,
+        "eta_min": 0.0,
+        "exp_warmup": 0,
+        "weight_decay": 1.2094285288017e-07,
+        "final_weight_decay": 0.0,
+        "ipe_scale": 1.0,
+        "gradient_clipping": 1.0,
+        "mp_distributed": false,
+        "mp_nodes": 1,
+        "mp_gpus": 1,
+        "mp_nr": 0,
+        "pin_memory": true,
+        "using_embedding": true,
+        "model_name": "dcnv2",
+        "model_dtype": "float32",
+        "data_loader_nprocs": 4,
+        "load_from_checkpoint": false,
+        "load_path": null,
+        "model_amp": false,
+        "task_type": "multi_class",
+        "is_batchlearning": true,
+        "iteration": 0,
+        "encoder_type": "linear_flatten",
+        "d_out": 128,
+        "hidden_dim": 386,
+        "n_hidden_layers": 2,
+        "n_cross_layers": 7,
+        "hidden_dropout": 0.08621033470865855,
+        "cross_dropout": 0.07023334683186173,
+        "stacked": true,
+        "d_embedding": 70,
+        "input_embed_dim": 16,
+        "input_dim": 129,
+        "n_cont_features": 128,
+        "cardinalities": [],
+        "out_dim": 1000,
+        "summary_input": [
+            512,
+            129,
+            16
+        ],
+        "dataset_name": "aloi_embedded",
+        "iterations_per_epoch": 190,
+        "num_epochs": 200
+    },
+    "profiling_info": [
+        {
+            "function": "warnings.py:503(__exit__)",
+            "call_count": 295104,
+            "total_time": 0.328214547,
+            "cumulative_time": 0.39253987100000004
+        },
+        {
+            "function": "enum.py:1175(_generate_next_value_)",
+            "call_count": 27,
+            "total_time": 3.3762e-05,
+            "cumulative_time": 5.2216e-05
+        },
+        {
+            "function": "__init__.py:668(update)",
+            "call_count": 1,
+            "total_time": 6.46e-07,
+            "cumulative_time": 6.46e-07
+        },
+        {
+            "function": "_parser.py:86(opengroup)",
+            "call_count": 71,
+            "total_time": 0.00023166600000000003,
+            "cumulative_time": 0.000441322
+        },
+        {
+            "function": "_parser.py:953(fix_flags)",
+            "call_count": 38,
+            "total_time": 7.002500000000001e-05,
+            "cumulative_time": 8.2867e-05
+        },
+        {
+            "function": "_parser.py:240(__next)",
+            "call_count": 18092,
+            "total_time": 0.005910863000000001,
+            "cumulative_time": 0.005910863000000001
+        },
+        {
+            "function": "__init__.py:164(match)",
+            "call_count": 743,
+            "total_time": 0.000580594,
+            "cumulative_time": 0.002348696
+        },
+        {
+            "function": "__init__.py:179(sub)",
+            "call_count": 129,
+            "total_time": 0.000275703,
+            "cumulative_time": 0.002189866
+        },
+        {
+            "function": "__init__.py:199(split)",
+            "call_count": 29,
+            "total_time": 0.00011659900000000001,
+            "cumulative_time": 0.000333241
+        },
+        {
+            "function": "__init__.py:209(findall)",
+            "call_count": 1884,
+            "total_time": 0.0071392650000000005,
+            "cumulative_time": 0.032995765
+        }
+    ],
+    "total_elapsed_time": 429.55409342399946
+}

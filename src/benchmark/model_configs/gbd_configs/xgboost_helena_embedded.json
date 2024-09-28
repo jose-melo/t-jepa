@@ -1,0 +1,16 @@
+{
+    "model_name": "xgboost",
+    "data_loader_nprocs": 4,
+    "data_path": "./datasets",
+    "data_set": "helena_embedded",
+    "using_embedding": false,
+    "val_size_ratio": 0,
+    "test_size_ratio": 0.1,
+    "n_estimators": 1000,
+    "max_depth": 5,
+    "learning_rate": 0.1,
+    "task_type": "classification",
+    "n_jobs": -1,
+    "random_state": 42,
+    "script_path": "run_benchmark.py"
+}

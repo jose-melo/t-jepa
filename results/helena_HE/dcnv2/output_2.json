@@ -1,0 +1,161 @@
+{
+    "val_metrics": [
+        {
+            "helena_val_loss": 2.536341905593872,
+            "lr": 5.7669527450343594e-05,
+            "helena_val_accuracy": 0.3882497251033783,
+            "helena_val_precision": 0.38186049461364746,
+            "helena_val_recall": 0.3882497251033783,
+            "helena_val_f1-score": 0.3677496314048767,
+            "helena_val_support": 504.11920166015625,
+            "helena_val_score": 0.3882497251033783
+        }
+    ],
+    "test_metrics": [
+        {
+            "helena_test_loss": 2.536341905593872,
+            "lr": 5.7669527450343594e-05,
+            "helena_test_accuracy": 0.3882497251033783,
+            "helena_test_precision": 0.38186049461364746,
+            "helena_test_recall": 0.3882497251033783,
+            "helena_test_f1-score": 0.3677496314048767,
+            "helena_test_support": 504.11920166015625,
+            "helena_test_score": 0.3882497251033783
+        }
+    ],
+    "args": {
+        "test": false,
+        "mock": false,
+        "res_dir": "./",
+        "data_path": "./datasets",
+        "data_set": "helena",
+        "test_size_ratio": 0.1,
+        "val_size_ratio": 0.0,
+        "random_state": 42,
+        "full_dataset_cuda": false,
+        "verbose": false,
+        "exp_n_runs": 1,
+        "exp_device": null,
+        "np_seed": 97501,
+        "torch_seed": 80320,
+        "random": true,
+        "output_file": "dcnv2_helena_tuned/output_2.json",
+        "batch_size": 512,
+        "exp_train_total_epochs": 200,
+        "exp_patience": 16,
+        "log_tensorboard": false,
+        "exp_cadence_type": "improvement",
+        "exp_cache_cadence": 20,
+        "exp_scheduler": true,
+        "exp_weight_decay_scheduler": true,
+        "start_lr": 0.0,
+        "lr": 8.811119511872615e-05,
+        "final_lr": 0.0,
+        "T_max": 10,
+        "eta_min": 0.0,
+        "exp_warmup": 0,
+        "weight_decay": 0.0009329607301455672,
+        "final_weight_decay": 0.0,
+        "ipe_scale": 1.0,
+        "gradient_clipping": 1.0,
+        "mp_distributed": false,
+        "mp_nodes": 1,
+        "mp_gpus": 1,
+        "mp_nr": 0,
+        "pin_memory": true,
+        "using_embedding": false,
+        "model_name": "dcnv2",
+        "model_dtype": "float32",
+        "data_loader_nprocs": 4,
+        "load_from_checkpoint": false,
+        "load_path": null,
+        "model_amp": false,
+        "task_type": "multi_class",
+        "is_batchlearning": true,
+        "iteration": 0,
+        "encoder_type": "linear_flatten",
+        "d_out": 128,
+        "hidden_dim": 768,
+        "n_hidden_layers": 3,
+        "n_cross_layers": 3,
+        "hidden_dropout": 0.2926198391398145,
+        "cross_dropout": 0.08080014745869828,
+        "stacked": true,
+        "d_embedding": 128,
+        "input_embed_dim": null,
+        "input_dim": 27,
+        "n_cont_features": 27,
+        "cardinalities": [],
+        "out_dim": 100,
+        "summary_input": [
+            512,
+            27
+        ],
+        "dataset_name": "helena",
+        "iterations_per_epoch": 115,
+        "num_epochs": 200
+    },
+    "profiling_info": [
+        {
+            "function": "warnings.py:503(__exit__)",
+            "call_count": 181308,
+            "total_time": 0.194286324,
+            "cumulative_time": 0.229975269
+        },
+        {
+            "function": "enum.py:1175(_generate_next_value_)",
+            "call_count": 27,
+            "total_time": 4.7984e-05,
+            "cumulative_time": 7.715200000000001e-05
+        },
+        {
+            "function": "__init__.py:668(update)",
+            "call_count": 1,
+            "total_time": 5.39e-07,
+            "cumulative_time": 5.39e-07
+        },
+        {
+            "function": "_parser.py:86(opengroup)",
+            "call_count": 71,
+            "total_time": 0.000322615,
+            "cumulative_time": 0.0005571560000000001
+        },
+        {
+            "function": "_parser.py:953(fix_flags)",
+            "call_count": 38,
+            "total_time": 7.5256e-05,
+            "cumulative_time": 8.880900000000001e-05
+        },
+        {
+            "function": "_parser.py:240(__next)",
+            "call_count": 18092,
+            "total_time": 0.0054921860000000005,
+            "cumulative_time": 0.0054921860000000005
+        },
+        {
+            "function": "__init__.py:164(match)",
+            "call_count": 743,
+            "total_time": 0.0007565670000000001,
+            "cumulative_time": 0.0028243020000000003
+        },
+        {
+            "function": "__init__.py:179(sub)",
+            "call_count": 129,
+            "total_time": 0.000251332,
+            "cumulative_time": 0.0021616490000000003
+        },
+        {
+            "function": "__init__.py:199(split)",
+            "call_count": 45,
+            "total_time": 0.00021763700000000002,
+            "cumulative_time": 0.0008239520000000001
+        },
+        {
+            "function": "__init__.py:209(findall)",
+            "call_count": 155,
+            "total_time": 0.001225472,
+            "cumulative_time": 0.0037943520000000004
+        }
+    ],
+    "total_elapsed_time": 203.29608520000014
+}

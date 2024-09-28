@@ -1,0 +1,38 @@
+{
+    "higgs_embedded_test_loss": {
+        "mean": 0.567590007185936,
+        "std": 0.00567494814804795
+    },
+    "lr": {
+        "mean": 2.2446482034865767e-05,
+        "std": 0.0
+    },
+    "higgs_embedded_test_accuracy": {
+        "mean": 0.7053544133901596,
+        "std": 0.0055433455597314
+    },
+    "higgs_embedded_test_precision": {
+        "mean": 0.7061486154794693,
+        "std": 0.005544576246660024
+    },
+    "higgs_embedded_test_recall": {
+        "mean": 0.7053544133901596,
+        "std": 0.0055433455597314
+    },
+    "higgs_embedded_test_f1-score": {
+        "mean": 0.704298734664917,
+        "std": 0.005594797725741473
+    },
+    "higgs_embedded_test_support": {
+        "mean": 508.5838928222656,
+        "std": 0.0
+    },
+    "higgs_embedded_test_score": {
+        "mean": 0.7053544133901596,
+        "std": 0.0055433455597314
+    },
+    "total_elapsed_time": {
+        "mean": 1093.9941990913514,
+        "std": 13.628461262350404
+    }
+}
