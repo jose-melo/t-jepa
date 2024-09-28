@@ -22,17 +22,8 @@ As presented in the Figure, T-JEPA uses three main modules to learn representati
 3. **Prediction Module**
 
 The goal is to predict the latent representation of one subset of features from another subset within the same sample.
-
-Let:
-- **x** ∈ 𝓧 ⊆ ℝ^d represent a sample with d features (numerical or categorical),
-- **h** denote the hidden dimension of the transformer encoders,
-- **fθ** be the context encoder,
-- **fθ'** the target encoder, and
-- **gφ** the prediction module.
-
-The prediction is made using the context encoder, while the target encoder constructs the representations to be predicted.
-
 ## Code Structure
+
 The repository is structured as follows:
 
 ```
